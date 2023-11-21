@@ -3,9 +3,9 @@ on:
   - push
 jobs:
   first-jobs:
-    run: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: car firstfile.txt
+      - run: cat firstfile.txt
 
----
+...
